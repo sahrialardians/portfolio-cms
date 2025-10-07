@@ -22,15 +22,10 @@ import {
 } from "@/components/ui/sidebar"
 
 const data = {
-  user: {
-    name: "shadcn",
-    email: "m@example.com",
-    avatar: "/avatars/shadcn.jpg",
-  },
   navMain: [
     {
       title: "Dashboard",
-      url: "dashboard",
+      url: "/",
       icon: IconDashboard,
     },
     {
@@ -61,9 +56,9 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
               asChild
               className="data-[slot=sidebar-menu-button]:!p-1.5"
             >
-              <a href="/dashboard">
+              <a href="/">
                 <IconInnerShadowTop className="!size-5" />
-                <span className="text-base font-semibold">Sahrial Lab.</span>
+                <span className="text-base font-semibold">{"Sahrial Lab's"}</span>
               </a>
             </SidebarMenuButton>
           </SidebarMenuItem>
